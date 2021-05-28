@@ -4973,6 +4973,7 @@ select[multiple] {
     display: flex;
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    text-decoration: none;
 }
 .menu-centered > .menu,
 .menu.simple li {
@@ -10638,6 +10639,7 @@ ul.right {
     text-transform: capitalize;
     padding: 0 !important;
     margin: 0 1rem;
+    text-decoration: none;
 }
 .block--bolero-user-menu-bolero-user-menu-nav a.user-profile:hover,
 .delta--bolero-user-menu-nav .user--menu-link-login a:hover,
@@ -21253,8 +21255,40 @@ input:checked ~ .user-profile-form section[class*="user-profile-"] .form-item[cl
     }
 }
 .l-about-bg {
-    background: url(//cache.umusic.com/_sites/_halo/machinegunkelly3/images/subscribe-bg.jpg) top center/cover;
+    background: url(img/ezm_about.png) top center/cover;
 }
+.l-hero-bg {
+    background: url(img/ezm_album.jpg) top center/cover;
+}
+.l-page-node-region--footer {
+    min-height: 440px;
+    padding: 3.375rem 0 2.25rem;
+    max-width: 100%;
+    width: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@media screen and (min-width: 64em) {
+    .l-page-node-region--footer {
+        min-height: 600px;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 80em) {
+    .l-page-node-region--footer {
+        min-height: 800px;
+    }
+}
+.hero-style {
+    width: 1423px; 
+    position: relative; 
+    left: -2846px; 
+    top: 0px; 
+    z-index: 900; 
+    opacity: 1;
+}
+
 
 
 

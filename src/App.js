@@ -7,11 +7,12 @@ import About from './components/About/About';
 import './App.css';
 
 class App extends Component {
+
   render() {
     return (
       <div className="l-page-wrapper inner-wrap">
         <NavBar />
-        <Hero /> */
+        <Hero /> 
         <About />
       </div>
     );
