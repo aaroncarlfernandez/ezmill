@@ -4435,7 +4435,7 @@ select[multiple] {
 }
 .button,
 .node.node--spotify-presave .steps a[href*="step2"] {
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
     line-height: 1;
     cursor: pointer;
@@ -7276,9 +7276,9 @@ section.l-banner ul.slick-dots {
     border-top: none;
     z-index: 9;
 }
-section.l-banner .slick-slider {
+/* section.l-banner .slick-slider {
     background: #222;
-}
+} */
 section.l-banner .slick-slider .views-row {
     background-color: #0a0a0a;
     width: 100%;
@@ -8389,8 +8389,9 @@ form .container-inline-date > .form-type-date-select .form-item {
     background: 0 0;
     transition: 0.3s ease-in-out all;
 }
-.not-front .sticky,
-.scrolled .page-node-1 .sticky {
+/* .not-front .sticky, */
+/* .scrolled .page-node-1 .sticky { */
+.scrolled .sticky {
     background: rgba(255, 255, 255, 0.8);
 }
 .l-header .block[class*="-user-menu"] {
@@ -9962,9 +9963,6 @@ div#block-bolero-user-login-user-login-modal.hide-email .ae-social-login-links {
     float: left;
     text-indent: 0;
 }
-.l-footer .site-name a {
-    background-image: url(//cache.umusic.com/_sites/_halo/machinegunkelly3/images/logo.png);
-}
 .site-logo {
     display: inline-block;
     margin: 0 0 0 1.125rem;
@@ -10219,7 +10217,6 @@ div.reveal-modal-bg {
     background: #000;
 }
 .reveal-modal.mailing-list {
-    background: url(//cache.umusic.com/_sites/_halo/machinegunkelly3/images/subscribe-bg.jpg) top center/cover no-repeat;
     border: none;
     border-radius: 0;
     padding-bottom: 1.125rem;
@@ -12626,7 +12623,7 @@ div.ui360 a span.metadata * {
     font-size: calc(1.48148vw + 29.26px);
     font-weight: 300;
     padding: 0.5625rem 0;
-    margin: 1.125rem auto;
+    /* margin: 1.125rem auto; */
     clear: both;
     letter-spacing: 0;
     text-align: left;
@@ -14845,11 +14842,13 @@ html {
     background-color: transparent;
     margin: 0 auto;
 }
-.page-node-1 .block__title {
+/* .page-node-1 .block__title { */
+.block__title {
     position: relative;
     opacity: 0;
 }
-.page-node-1 .block__title:after {
+/* .page-node-1 .block__title:after { */
+.block__title:after {
     content: "";
     background: #2d2d2d;
     position: absolute;
@@ -14859,11 +14858,13 @@ html {
     right: 0;
     opacity: 0;
 }
-.page-node-1 .block__title.animate-in {
+/* .page-node-1 .block__title.animate-in { */
+.block__title.animate-in {
     animation: fade 0.8s ease-in-out 1 forwards;
     animation-delay: 0.5s;
 }
-.page-node-1 .block__title.animate-in::after {
+/* .page-node-1 .block__title.animate-in::after { */
+.block__title.animate-in::after {
     animation: swipe 0.8s ease-in-out 1 forwards;
     animation-delay: 0.5s;
     -ms-transform-origin: left 50%;
@@ -15627,12 +15628,13 @@ body.page-node-2 .l-page .l-columns {
     padding: 0;
     position: static;
 }
-.page-node-1 .block__title {
+/* .page-node-1 .block__title { */
+.block__title {
     letter-spacing: 20px;
     text-indent: 20px;
     text-align: center;
-    width: -webkit-max-content;
-    width: max-content;
+    /* width: -webkit-max-content; */
+    /* width: max-content; */
     padding: 0 0 10px;
     line-height: 1;
 }
@@ -16023,7 +16025,7 @@ body.page-node-2 .l-page .l-columns {
     right: 0;
 }
 .page-node-1 .l-footer {
-    background: url(//cache.umusic.com/_sites/_halo/machinegunkelly3/images/subscribe-bg.jpg) top center/cover;
+    background: url(img/ezm_about.png) top center/cover;
 }
 .page-node-1 .l-region--footer {
     min-height: 440px;
@@ -17430,11 +17432,6 @@ input:checked ~ .user-profile-form section[class*="user-profile-"] .form-item[cl
 .l-grid.node--video.node--headline .field--name-field-youtube-id,
 .l-grid.node--video.node--summary .field--name-field-youtube-id {
     display: none;
-}
-@font-face {
-    font-family: Suisse;
-    font-weight: 700;
-    src: url(//cache.umusic.com/_sites/_halo/machinegunkelly3/fonts/SuisseIntlBold.ttf);
 }
 @font-face {
     font-family: apple-music;
@@ -20402,9 +20399,9 @@ input:checked ~ .user-profile-form section[class*="user-profile-"] .form-item[cl
     .exacttarget-webform input[type="checkbox"]:before {
         top: -4px;
     }
-    .site-name > a {
+    /* .site-name > a {
         background-position: 0 5px;
-    }
+    } */
     .off-canvas-toggle {
         display: inline-block !important;
     }
@@ -20889,7 +20886,7 @@ input:checked ~ .user-profile-form section[class*="user-profile-"] .form-item[cl
     }
     .page-node-1 .block__title {
         letter-spacing: 5px;
-        text-indent: 5px;
+        /* text-indent: 5px; */
     }
     .page-node-1 .l-banner .l-region--banner:not(.slick-slider) .slick-next,
     .page-node-1 .l-banner .l-region--banner:not(.slick-slider) .slick-prev {
@@ -20953,7 +20950,7 @@ input:checked ~ .user-profile-form section[class*="user-profile-"] .form-item[cl
         font-size: 18px;
     }
     .page-node-1 .l-footer {
-        background: url(//cache.umusic.com/_sites/_halo/machinegunkelly3/images/subscribe-bg-mobile.jpg) top center/cover;
+        background: url(img/ezm_about.png) top center/cover;
     }
     .page-node-1 .l-region--footer .form-item {
         float: none;
@@ -21254,9 +21251,6 @@ input:checked ~ .user-profile-form section[class*="user-profile-"] .form-item[cl
         opacity: 1;
     }
 }
-.l-about-bg {
-    background: url(img/ezm_about.png) top center/cover;
-}
 .l-hero-bg {
     background: url(img/ezm_album.jpg) top center/cover;
 }
@@ -21288,292 +21282,241 @@ input:checked ~ .user-profile-form section[class*="user-profile-"] .form-item[cl
     z-index: 900; 
     opacity: 1;
 }
-
-
-
-
-/* body {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto Mono",sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #333;
-  background: #fefefe;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.slick-track-style {
+    opacity: 1; 
+    width: 4269px;
 }
-body {
-  width: 100%;
-  overflow-x: hidden;
-  position: inherit;
-  backface-visibility: hidden;
-  -webkit-overflow-scrolling: touch;
+.hero-img-1 {
+    background: url("img/ezm_album_e.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-a {
-  background-color: transparent;
-  color: #111;
-  text-decoration: none;
-  line-height: inherit;
-  cursor: pointer;
+.hero-img-2 {
+    background: url("img/ezm_art_e.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.l-page:after, body {
-  background-color: #fefefe;
-}
-body, html {
-  height: 100%;
-}
-.off-canvas-wrap {
-  position: relative;
-  width: 100%;
-}
-.l-page {
-  padding-bottom: 0!important;
-  height: auto;
-  min-height: calc(100% - 50px);
-}
-.inner-wrap {
-  min-height: 100%;
-  -ms-transform: transformX(0);
-  transform: transformX(0);
-  transition: transform .3s ease;
-  backface-visibility: hidden;
-  z-index: 1;
-}
-.l-page-wrapper {
-  background-color: transparent;
-  margin: 0 auto;
-}
-@media screen and (min-width: 64em) {
-  .l-page-wrapper {
-    padding-top: 90px;
-  }
-}
-.l-page-wrapper {
-  padding-top: 0;
-}
-.l-header {
-  font-size: .75rem;
-  width: 100%;
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-@media screen and (min-width: 64em) {
-  .top-bar {
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-}
-
-@media screen and (min-width: 80em) {
-  .l-header .l-navigation.top-bar {
-    -ms-flex-flow: nowrap;
-    flex-flow: nowrap;
-  }
-}
-.l-navigation.top-bar {
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-.top-bar {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: .5rem;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-.top-bar, .top-bar ul {
-  background-color: transparent;
-}
-.l-navigation {
-  padding: 0;
-}
-.l-header .l-branding {
-  width: 100%;
-  text-align: center;
-}
-@media screen and (min-width: 80em) {
-  .l-header .l-branding {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    width: auto;
-    height: 90px;
-  }
-}
-.l-header .l-branding .site-name {
-  display: inline-block;
-}
-.site-name {
-  margin: 0 auto;
-  padding: 0 1.125rem;
-}
-.site-name>a {
-  float: left;
-  text-indent: -9999em;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 325px;
-  height: 50px;
-  max-height: 90px;
-  line-height: 50px;
-  max-width: 250px;
-  margin: 0 auto;
-  background: url("img/Ezmil_logo.png") center center/contain no-repeat;
-}
-@media screen and (min-width: 80em) {
-  .site-name>a {
-    max-width: inherit;
-    background-size: 100%;
-  } 
-}
-@media screen and (min-width: 80em) {
-  .l-header .site-name>a, .l-header a {
-    line-height: 90px;
-    height: 90px;
- }
-}
-ol, ul {
-  margin-left: 1.25rem;
-}
-dl, ol, ul {
-  margin-bottom: 1rem;
-}
-dl, ol, ul {
-  line-height: 1.6;
-  list-style-position: outside;
-}
-ul {
-  list-style-type: disc;
-}
-li {
-  font-size: inherit;
-}
-ul.left, ul.left li, ul.right, ul.right li {
-  height: 50px;
-  line-height: 50px;
-}
-ul.left, ul.right {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0 auto;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-}
-ul.left {
-  left: .625rem;
-}
-ul.left a, ul.right a {
-  vertical-align: text-top;
-}
-a.menu-icon>span {
-  background: #000;
-  border-radius: 1px;
-  height: 3px;
-  width: 24px;
-  display: block;
-  text-indent: -9999em;
-  -webkit-transition: .1s transform ease;
-  -transition: .1s transform ease;
-  transition: .1s transform ease;
-}
-.l-region--navigation {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-@media screen and (min-width: 80em) {
-  .l-header .l-region--navigation {
+.l-page-node-l-region-footer {
+    min-height: 440px;
+    padding: 3.375rem 0 2.25rem;
+    max-width: 100%;
     width: 100%;
-    height: 90px;
-  }
+    -ms-flex-align: center;
+    align-items: center;
 }
-.l-region--navigation>.block {
-  display: inline-block;
-  padding: 0 .5rem;
-}
-.l-region--navigation #block-dotmailer-rest-webform-dm-mail-icon-nav, .l-region--navigation>.block:not(.block--asf-commerce) {
-  display: none;
-}
-@media screen and (min-width: 80em) {
-  .l-region--navigation>.block:not(.block--asf-commerce) {
-    display: inline-block;
-  }
-}
-.menu {
-  border: none;
-  list-style: none;
-  text-align: left;
-}
-.button-group, .menu {
-  display: -ms-flexbox;
-}
-.menu, .menu.expanded>li:first-child:last-child {
-  width: 100%;
-}
-.menu {
-  margin: 0;
-  list-style-type: none;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-  -ms-flex-align: center;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-ul.links, ul.menu {
-  margin: 0 auto;
-}
-.menu>li {
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-.menu .leaf {
-  list-style-type: none;
-  list-style-image: none;
-}
-.l-region--navigation a {
-  font-size: calc(.27778vw + 8.11px);
-  letter-spacing: .01em;
-  cursor: pointer;
-  transition: .2s color ease-in-out;
+@media screen and (min-width: 64em) {
+    .l-page-node-l-region-footer {
+        min-height: 600px;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
 }
 @media screen and (min-width: 80em) {
-  .l-header .site-name>a, .l-header a {
-    line-height: 90px;
-    height: 90px;
+    .l-page-node-l-region-footer {
+        min-height: 800px;
+    }
+}
+.l-footer-disclaimer {
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: .3s ease-in-out all;
+    font-family: Suisse,sans-serif;
+    font-weight: 700;
+    color: #000;
+}
+@media screen and (min-width: 64em) {
+    .l-music-album {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 550px;
+    }
+}
+/* .l-banner{
+    background: #fff !important;
+} */
+.height-100vh {
+    height: 100vh;
+}
+.album-width {
+    width: 80% !important;
+    margin-left: 5em;
+}
+.music-title {
+    font-size: calc(.37037vw + 18.81px);
+    color: #000;
+    font-weight: 300;
+    line-height: 1.5;
+    text-transform: capitalize;
+    text-align: center;
+    /* width: 90%; */ 
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio: 1){ 
+    .album-width {
+        width: 70% !important;
+        margin-left: 4em;
+    }
+    /* .music-title {
+        margin-left: 4em;
+    } */
+    .spotify-button {
+        margin-left: 2em;
+    }
+}
+@media screen and (min-device-width : 320px) and (max-device-width : 568px)  {
+    .album-width {
+        width: 70% !important;
+        margin-left: 3em;
+    }
+    .spotify-button {
+        margin-left: 0.75em;
+    }
+}
+.music-margin {
+    margin: 6em 0; 
+}
+.text-decoration-none {
+    text-decoration: none !important;
+}
+@media screen and (min-width: 64em) {
+    .music-area-ms1 {
+        width: 50%;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 64em) {
+    .music-area-ms2 {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 550px;
+    }
+}
+.social-icon {
+    display: block;
+    width: 25px;
+    margin: 0 7.5px;
+    padding: 0;
+    font-size: 20px;
+    text-indent: -9999em;
+    white-space: nowrap;
+    overflow: hidden;
+    float: none;
+    transition: .3s ease-in-out all;
+    text-align: center;
+    color: #000;
+}
+.hero-button {
+    width: 235px;
+    height: 53px;
+    padding: 2px 10px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    background: 0 0;
+    z-index: 1;
+    border-radius: 25px;
+    position: relative;
+    transition: .3s ease-in-out all;
+    border: 2px solid #000;
+    letter-spacing: 0;
+    overflow: hidden;
+    margin: auto;
+}
+.headroom {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
+.headroom--scrolled {
+    background: rgba(255, 255, 255, 0.8) !important;
 }
-@media (min-width: 1400px) {
-  .l-region--navigation a {
-    font-size: 12px;
-  }
+.headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
 }
-.menu>li>a {
-  padding: 0 .5rem;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+.headroom--unpinned {
+    position: fixed;
+    transform: translateY(-100%);
 }
-.menu-block-asf_common_mm_nav>.menu>li:not(.site-name)>a {
-  position: relative;
+.headroom--pinned {
+    position: fixed;
+    transform: translateY(0%);
 }
-.block--bolero-user-menu-bolero-user-menu-nav a.user-profile, .delta--bolero-user-menu-nav .user--menu-link-login a, .menu-block-asf_common_mm_nav>.menu>li:not(.site-name)>a {
-  position: relative;
-  color: #000;
-  font-weight: 700;
-  font-size: calc(.62305vw + 8.03px);
-  text-transform: capitalize;
-  padding: 0!important;
-  margin: 0 1rem;
+.spotify-button a {
+    width: 235px;
+    height: 53px;
+    padding: 2px 10px 0;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 16px;
+    background: 0 0;
+    z-index: 1;
+    border-radius: 25px;
+    position: relative;
+    transition: 0.3s ease-in-out all;
+    border: 2px solid #000;
+    letter-spacing: 0;
+    overflow: hidden;
+    float: none !important;
+    font-weight: 700;
+    margin: 0 3px 3px 0;
+    box-shadow: none !important;
 }
- */
+.spotify-button a:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin: -15px 0 0 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #2d2d2d;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    transform: scale3d(1, 2, 1);
+    transition: transform 0.3s, opacity 0.3s;
+    transition-timing-function: ease, ease;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1);
+}
+.spotify-button a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #2d2d2d;
+    border-color: #2d2d2d;
+    transition: 0.3s ease-in-out color, 0s ease-in-out background 0.2s;
+}
+.spotify-button a:focus:after,
+.spotify-button a:hover:after {
+    transform: scale3d(9, 9, 1);
+}
+.about-text {
+    color: black;
+}
+.slick-slide {
+    z-index: 998;
+}
+.slick-active.slick-current {
+    z-index: 999;
+}
