@@ -34,7 +34,6 @@ class App extends Component {
 function onViewport(el, elClass, offset, callback) {
   let didScroll = false;
   let this_top;
-  let height;
   let top;
 
   if(!offset) { offset = 0; }
@@ -50,7 +49,6 @@ function onViewport(el, elClass, offset, callback) {
  
       $(el).each(function(i){
         this_top = $(this).offset().top - offset;
-        // height   = $(this).height();
  
         // Scrolled within current section
         if (top >= this_top && !$(this).hasClass(elClass)) {
