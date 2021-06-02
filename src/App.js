@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery'
-
 import Header from  './components/Header/Header';
 import Sidebar from  './components/Header/Sidebar';
 import Hero from './components/Hero/Hero';
