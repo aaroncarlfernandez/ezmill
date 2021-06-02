@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Slider from "react-slick";
 import ReactPlayer from "react-player";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class Videos extends Component {
   constructor(props) {
@@ -34,7 +35,9 @@ export default class Videos extends Component {
       <Container className="d-flex flex-column align-items-center height-100vh mt-5">
 
         <div className="mt-5 "></div>
-        <h2 className="block__title mt-5">Videos</h2>
+        <ScrollAnimation animateIn="block__title animate-in mt-5">
+          Videos
+        </ScrollAnimation>
         <Slider ref={slider => (this.slider = slider)} className="view-content bolero-slick-carousel bolero-slick-processed bolero-slick-initialized my-4"  {...settings}>
 
           <Row className="d-flex flex-column align-items-center" key={"mv1"}>

@@ -3,6 +3,8 @@ import { Container, Image, Row, Col } from 'react-bootstrap';
 import Slider from "react-slick";
 import { musicData } from '../../data/data';
 
+import ScrollAnimation from 'react-animate-on-scroll';
+
 export default class Music extends Component {
 
   render() {
@@ -44,7 +46,9 @@ let musicContainer = (data) => {
             <Row className="d-flex flex-column align-items-center">
               <Col sm={12} className="my-2">  
                 <Row className="d-flex flex-column align-items-center">
-                  <h2 className="block__title">{data.category}</h2>
+                  <ScrollAnimation animateIn="block__title animate-in">
+                    {data.category}
+                  </ScrollAnimation>
                 </Row>
               </Col>
               <Col sm={12} className="my-2">
@@ -53,9 +57,11 @@ let musicContainer = (data) => {
                 </Row>
               </Col>
               <Col sm={12} className="my-2">
-                <Row className="d-flex flex-column align-items-center spotify-button">
-                  <a href={data.spotifyLink} className="button spotify my-2" target="_blank" rel="noreferrer"><i className="icon icon-spotify"></i> Spotify</a>
-                </Row>
+                <ScrollAnimation animateIn="fadeIn">
+                  <Row className="d-flex flex-column align-items-center spotify-button">
+                    <a href={data.spotifyLink} className="button spotify my-2" target="_blank" rel="noreferrer"><i className="icon icon-spotify"></i> Spotify</a>
+                  </Row>
+                </ScrollAnimation>
               </Col>
             </Row>
           </Col>

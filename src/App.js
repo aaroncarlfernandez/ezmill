@@ -13,7 +13,7 @@ import './App.css';
 class App extends Component {
 
   render() {
-    onViewport(".block__title", "animate-in", 800, function() {});
+    // onViewport(".block__title", "animate-in", 800, function() {});
     return (
         <div  className="page-node-1">
           <div id={"page"} className="off-canvas-wrap l-page has-no-sidebars">

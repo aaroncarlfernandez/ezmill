@@ -21520,3 +21520,7 @@ and (-webkit-min-device-pixel-ratio: 1){
 .slick-active.slick-current {
     z-index: 999;
 }
+.title-animation {
+    animation: fade .8s ease-in-out 1 forwards;
+    animation-delay: .5s;
+}
