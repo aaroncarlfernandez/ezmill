@@ -26,7 +26,7 @@ export default class Videos extends Component {
       slidesToScroll: 1,
       speed: 1000,
       autoplay: true,
-      autoplaySpeed: 3500,
+      autoplaySpeed: 4500,
       pauseOnHover: true,
       cssEase: "linear"
     };

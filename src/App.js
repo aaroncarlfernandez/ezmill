@@ -13,7 +13,6 @@ import './App.css';
 class App extends Component {
 
   render() {
-    // onViewport(".block__title", "animate-in", 800, function() {});
     return (
         <div  className="page-node-1">
           <div id={"page"} className="off-canvas-wrap l-page has-no-sidebars">
@@ -29,36 +28,6 @@ class App extends Component {
         </div> 
     );
   }
-}
-
-function onViewport(el, elClass, offset, callback) {
-  let didScroll = false;
-  let this_top;
-  let top;
-
-  if(!offset) { offset = 0; }
- 
-  $(window).on('scroll',(function() {
-      didScroll = true;
-  }));
- 
-  setInterval(function() {
-    if (didScroll) {
-      didScroll = false;
-      top = $(this).scrollTop();
- 
-      $(el).each(function(i){
-        this_top = $(this).offset().top - offset;
- 
-        // Scrolled within current section
-        if (top >= this_top && !$(this).hasClass(elClass)) {
-          $(this).addClass(elClass);
- 
-          if (typeof callback == "function") callback(el);
-        } 
-      });
-    }
-  }, 100);
 }
 
 export default App;
