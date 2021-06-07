@@ -21,7 +21,7 @@ export default class Main extends Component {
     };
 
     return (
-      <Slider className="l-region l-region--banner bolero-banner--slick" {...settings}>
+      <Slider {...settings}>
         <Container fluid className="hero-img-1"></Container>
         <Container fluid className="hero-img-2"></Container>
       </Slider>

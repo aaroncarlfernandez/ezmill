@@ -21339,7 +21339,7 @@ input:checked ~ .user-profile-form section[class*="user-profile-"] .form-item[cl
     background: #fff !important;
 } */
 .height-100vh {
-    height: 80vh;
+    height: 100vh;
 }
 .album-width {
     width: 80% !important;
