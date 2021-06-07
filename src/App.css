@@ -21339,7 +21339,7 @@ input:checked ~ .user-profile-form section[class*="user-profile-"] .form-item[cl
     background: #fff !important;
 } */
 .height-100vh {
-    height: 100vh;
+    height: 80vh;
 }
 .album-width {
     width: 80% !important;
@@ -21523,4 +21523,20 @@ and (-webkit-min-device-pixel-ratio: 1){
 .title-animation {
     animation: fade .8s ease-in-out 1 forwards;
     animation-delay: .5s;
+}
+.mt-6{
+    margin-top:10rem;
+}
+.about-cover {
+    height: 100vh;
+    background: url(img/ezm_about.png) top center/cover;
+}
+.bottom-stay {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+div#root,
+div#root > div {
+  height: 100%;
 }
