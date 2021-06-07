@@ -5,7 +5,7 @@ import Hero from './components/Hero/Hero';
 import Music from './components/Music/Music';
 import Videos from './components/Videos/Videos';
 import Error from './components/Error/Error';
-import Footer from './components/Footer/Footer';
+import About from './components/About/About';
 
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Route, Switch } from 'react-router-dom'
@@ -24,7 +24,7 @@ class App extends Component {
                 <Route exact path="/" component={Hero}/>
                 <Route exact path="/music" component={Music}/>
                 <Route exact path="/videos" component={Videos}/>
-                <Route exact path="/about" component={Footer}/>
+                <Route exact path="/about" component={About}/>
                 <Route component={Error}/>
             </Switch>
           </div>  

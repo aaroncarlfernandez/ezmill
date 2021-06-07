@@ -27,7 +27,7 @@ export default class Music extends Component {
     };
 
     return (
-      <Container className="d-flex align-items-center height-100vh mt-5">
+      <Container className="d-flex align-items-center height-100vh">
         <Slider className="view-content bolero-slick-carousel bolero-slick-processed bolero-slick-initialized"  {...settings}>
           {builtMusicContainer}
         </Slider>

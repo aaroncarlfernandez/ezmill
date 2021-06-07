@@ -32,11 +32,8 @@ export default class Videos extends Component {
     };
 
     return (
-      <Container className="d-flex flex-column align-items-center justify-content-center height-100vh mt-5">
+      <Container className="d-flex flex-column justify-content-center align-content-center height-100vh">
 
-        <ScrollAnimation animateIn="block__title animate-in">
-          Videos
-        </ScrollAnimation>
         <Slider ref={slider => (this.slider = slider)} className="view-content bolero-slick-carousel bolero-slick-processed bolero-slick-initialized my-5"  {...settings}>
 
           <Row className="d-flex flex-column align-items-center" key={"mv1"}>
@@ -54,6 +51,10 @@ export default class Videos extends Component {
           </Row>
 
         </Slider>
+
+        <ScrollAnimation animateIn="block__title animate-in">
+          Videos
+        </ScrollAnimation>
       </Container>
     )
   }
