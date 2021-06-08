@@ -32,9 +32,17 @@ export default class Videos extends Component {
     };
 
     return (
-      <Container className="d-flex flex-column justify-content-center align-content-center height-100vh">
+      <Container className="d-flex flex-column justify-content-center align-content-center height-100vh mt-5">
 
-        <Slider ref={slider => (this.slider = slider)} className="view-content bolero-slick-carousel bolero-slick-processed bolero-slick-initialized my-5"  {...settings}>
+        <Row className="my-5">
+          <ScrollAnimation animateIn="block__title animate-in">
+            Videos
+          </ScrollAnimation>
+        </Row>
+
+
+
+        <Slider ref={slider => (this.slider = slider)} className="view-content bolero-slick-carousel bolero-slick-processed bolero-slick-initialized"  {...settings}>
 
           <Row className="d-flex flex-column align-items-center" key={"mv1"}>
             <ReactPlayer url={"https://www.youtube.com/watch?v=uJSbt6cPbmA"} 
@@ -52,9 +60,6 @@ export default class Videos extends Component {
 
         </Slider>
 
-        <ScrollAnimation animateIn="block__title animate-in">
-          Videos
-        </ScrollAnimation>
       </Container>
     )
   }

@@ -19,14 +19,17 @@ class App extends Component {
         <Router>
           <div id={"page"} className="off-canvas-wrap l-page has-no-sidebars">
             <Sidebar />
-            <Header />
-            <Switch>
-                <Route exact path="/" component={Hero}/>
-                <Route exact path="/music" component={Music}/>
-                <Route exact path="/videos" component={Videos}/>
-                <Route exact path="/about" component={About}/>
-                <Route component={Error}/>
-            </Switch>
+            <div className="l-page-wrapper inner-wrap">
+              <Header />
+              <Switch>
+                  <Route exact path="/" component={Hero}/>
+                  <Route exact path="/music" component={Music}/>
+                  <Route exact path="/videos" component={Videos}/>
+                  <Route exact path="/about" component={About}/>
+                  <Route component={Error}/>
+              </Switch>
+            </div>
+
           </div>  
         </Router>
     );
