@@ -21286,7 +21286,6 @@ input:checked ~ .user-profile-form section[class*="user-profile-"] .form-item[cl
     opacity: 1; 
     width: 4269px;
 }
-
 .hero-img-1 {
     background: url("img/ezm_album_e.png");
     height: 88.5vh;
@@ -21543,6 +21542,7 @@ and (-webkit-min-device-pixel-ratio: 1){
 }
 .about-text {
     color: black;
+    position: relative;
 }
 .slick-slide {
     z-index: 998;
@@ -21589,4 +21589,54 @@ and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
 div#root,
 div#root > div {
   height: 100%;
+}
+.backgroundPanel {
+    height: calc(100% - 90px);
+    position: absolute;
+    width: 100%;
+}
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0;
+    height: 0;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
+and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
+{
+    .backgroundPanel {
+        height: calc(100% - 54px);
+        position: absolute;
+        width: 100%;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .backgroundPanel {
+        height: calc(100% - 54px);
+        position: absolute;
+        width: 100%;
+    }
+}
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+        .backgroundPanel {
+            height: calc(100% - 54px);
+            position: absolute;
+            width: 100%;
+        }
 }
