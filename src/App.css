@@ -21288,14 +21288,14 @@ input:checked ~ .user-profile-form section[class*="user-profile-"] .form-item[cl
 }
 .hero-img-1 {
     background: url("img/ezm_album_e.png");
-    height: 88.5vh;
+    height: 88vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .hero-img-2 {
     background: url("img/ezm_art_e.png");
-    height: 88.5vh;
+    height: 88vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
